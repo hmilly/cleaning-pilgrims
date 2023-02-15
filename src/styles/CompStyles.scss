@@ -1,0 +1,113 @@
+// header and Nav
+.header {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  nav {
+    display: block;
+    height: 100%;
+    width: 100%;
+    ul {
+      list-style-type: none;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      height: inherit;
+      li {
+        flex: 1;
+        text-align: center;
+        a {
+          padding: 5px;
+          color: white;
+          &:hover {
+            color: rgb(220, 187, 1);
+          }
+        }
+      }
+      #header-h1 {
+        flex: 3;
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// FbBanner
+
+.FbBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+
+  svg {
+    fill: white;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+// why us banner
+.whyUs-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    width: 100%;
+    color: rgb(220, 187, 1);
+    text-align: center;
+  }
+  .whyUs-banner-main {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      padding: 5px;
+      text-align: center;
+      img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      p {
+        width: 80%;
+      }
+      ul {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        color: rgb(164, 164, 164);
+      }
+    }
+  }
+}
+
+//footer
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  height: 150px;
+  a {
+    padding: 10px 4px;
+    color: rgb(220, 187, 1);
+    text-decoration: none;
+    &:hover {
+      color: gold;
+    }
+  }
+}

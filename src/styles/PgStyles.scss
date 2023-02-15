@@ -1,0 +1,89 @@
+// home
+.home {
+  display: flex;
+  flex-direction: column;
+  .home-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      url(../assets/office.png);
+    background-position: center;
+    background-size: cover;
+
+    div {
+      text-align: center;
+      height: 100%;
+      width: 90%;
+      h3 {
+        margin: 10px 0;
+        &:last-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+// contact
+
+// About
+// why us banner
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    width: 100%;
+    color: rgb(220, 187, 1);
+    text-align: center;
+  }
+  .about-main {
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      padding: 5px;
+      text-align: center;
+      img {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      p {
+        width: 80%;
+      }
+    }
+  }
+}
+
+// privacy-policy
+.privacyPg {
+  margin: 0 auto;
+  width: 60%;
+  h2 {
+    text-align: center;
+    color: rgb(220, 187, 1);
+  }
+  section {
+    line-height: 1.5;
+    p {
+      margin: 2px 0;
+    }
+    ul {
+      li {
+        padding: 2px 0;
+      }
+    }
+  }
+}
