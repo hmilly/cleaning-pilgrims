@@ -1,3 +1,8 @@
+.App {
+  background-color: black;
+  min-height: 100vh;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +23,8 @@ body h2 {
 }
 
 body h3,
-body button {
+body button,
+.btn {
   font-size: 20px;
 }
 
@@ -32,3 +38,27 @@ body td {
   font-size: 16px;
 }
 
+body p, input{
+  color: rgb(164, 164, 164);
+}
+
+.btn {
+  display: block;
+  width: 140px;
+  border: none;
+  background-color: rgb(220, 187, 1);
+  color: black;
+  font-weight: 500;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: gold;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

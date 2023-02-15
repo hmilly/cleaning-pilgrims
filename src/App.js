@@ -1,4 +1,7 @@
-import "./App.scss";
+
+import "./styles/PgStyles.scss";
+import "./styles/CompStyles.scss";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -18,7 +21,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );
