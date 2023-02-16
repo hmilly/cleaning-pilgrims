@@ -37,14 +37,18 @@
   }
 }
 
-// FbBanner
+// Form
+form{
+  width: 50%;
+}
 
+
+// FbBanner
 .FbBanner {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 150px;
-
   svg {
     fill: white;
     width: 50px;
@@ -99,15 +103,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin: 0 auto;
   height: 150px;
-  a {
-    padding: 10px 4px;
-    color: rgb(220, 187, 1);
-    text-decoration: none;
-    &:hover {
-      color: gold;
-    }
-  }
 }

@@ -11,8 +11,10 @@ const Header = () => {
           <li>
             <Link to="/contact">CONTACT</Link>
           </li>
-          <li id='header-h1'>
-            <Link to="/">KENT CLEANING PILGRIMS LTD.</Link>
+          <li>
+            <Link id="lg-txt" to="/">
+              KENT CLEANING PILGRIMS LTD.
+            </Link>
           </li>
           <li>
             <Link to="/about">ABOUT</Link>

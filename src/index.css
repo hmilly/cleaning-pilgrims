@@ -14,7 +14,7 @@ body {
 
 
 body h1,
-#header-h1 a {
+#lg-txt {
   font-size: 22px;
 }
 
@@ -38,10 +38,18 @@ body td {
   font-size: 16px;
 }
 
-body p, input{
+body p,
+input {
   color: rgb(164, 164, 164);
 }
 
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* <a> styled as a yellow btn */
 .btn {
   display: block;
   width: 140px;
@@ -57,8 +65,14 @@ body p, input{
   background-color: gold;
 }
 
-a,
-a:visited,
-a:active {
+
+/* <a> yellow link */
+#yellowLink {
+  padding: 10px 4px;
+  color: rgb(220, 187, 1);
   text-decoration: none;
+}
+
+#yellowLink:hover {
+  color: gold;
 }
