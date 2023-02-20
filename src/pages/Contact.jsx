@@ -2,9 +2,9 @@ import Form from "../components/Form";
 
 const Contact = () => {
   return (
-    <main className="about">
+    <main className="contact">
       <h2>ABOUT US</h2>
-      <div className="about-main">
+      <div className="contact-main">
         <Form />
         <aside>
           <h3>Questions or Comments?</h3>

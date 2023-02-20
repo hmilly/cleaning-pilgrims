@@ -4,9 +4,9 @@ import room from "../assets/room.png";
 
 const WhyUsBanner = () => {
   return (
-    <section className="whyUs-banner">
+    <section className="whyUs">
       <h2>WHY CHOOSE US?</h2>
-      <div className="whyUs-banner-main">
+      <div className="whyUs-content">
         <div>
           <img src={room} alt="Orange room" />
           <h3>A Cleaner Environment</h3>

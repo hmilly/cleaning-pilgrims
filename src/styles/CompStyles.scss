@@ -1,10 +1,11 @@
 // header and Nav
 .header {
+  position: fixed;
+  background-color: black;
   height: 60px;
   width: 100%;
   margin: 0;
   nav {
-    display: block;
     height: 100%;
     width: 100%;
     ul {
@@ -38,10 +39,9 @@
 }
 
 // Form
-form{
+form {
   width: 50%;
 }
-
 
 // FbBanner
 .FbBanner {
@@ -57,7 +57,7 @@ form{
 }
 
 // why us banner
-.whyUs-banner {
+.whyUs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,33 +66,38 @@ form{
     color: rgb(220, 187, 1);
     text-align: center;
   }
-  .whyUs-banner-main {
-    display: flex;
+  .whyUs-content {
     width: 80%;
-    flex-wrap: wrap;
-    div {
+  }
+}
+// ABOUT-main > div styles
+.whyUs-content,
+.about-main {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    p {
+      width: 80%;
+    }
+    ul {
+      width: 80%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      flex: 1;
-      padding: 5px;
-      text-align: center;
-      img {
-        width: 220px;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-      p {
-        width: 80%;
-      }
-      ul {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        color: rgb(164, 164, 164);
-      }
+      text-align: start;
+      color: rgb(164, 164, 164);
     }
   }
 }

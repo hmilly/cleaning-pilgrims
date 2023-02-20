@@ -31,6 +31,26 @@
 }
 
 // contact
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    width: 100%;
+    color: rgb(220, 187, 1);
+    text-align: center;
+  }
+  .contact-main {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    // form styles in compStyles
+    aside {
+      width: 50%;
+      padding: 10px 0;
+    }
+  }
+}
 
 // About
 .about {
@@ -43,15 +63,8 @@
     text-align: center;
   }
   .about-main {
-    display: flex;
-    flex-direction: row;
     width: 95%;
-
-    //  form styling under pgStyle
-    aside {
-      width: 50%;
-      padding: 10px 0;
-    }
+    // all other .about-main styles in compStyles
   }
 }
 

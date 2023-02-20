@@ -1,4 +1,9 @@
+/* Styles for buttons, text and main app */
+
+
+/* App and body styles */
 .App {
+  display: block;
   background-color: black;
   min-height: 100vh;
 }
@@ -13,6 +18,7 @@ body {
 }
 
 
+/* Styles for text throught the website */
 body h1,
 #lg-txt {
   font-size: 22px;
@@ -43,6 +49,8 @@ input {
   color: rgb(164, 164, 164);
 }
 
+
+/* Link stylings */
 a,
 a:visited,
 a:active {
@@ -64,7 +72,6 @@ a:active {
 .btn:hover {
   background-color: gold;
 }
-
 
 /* <a> yellow link */
 #yellowLink {
