@@ -1,5 +1,5 @@
 // header and Nav
-.header {
+header {
   position: fixed;
   background-color: black;
   height: 60px;
@@ -27,8 +27,22 @@
             color: rgb(220, 187, 1);
           }
         }
+        button {
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          &:hover {
+            .icon {
+              color: gold;
+            }
+          }
+          .icon {
+            color: white;
+          }
+        }
       }
-      #header-h1 {
+      #lg-li {
         flex: 3;
         a:hover {
           color: white;
@@ -61,6 +75,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  width: 80%;
   h2 {
     width: 100%;
     color: rgb(220, 187, 1);
@@ -68,6 +84,10 @@ form {
   }
   .whyUs-content {
     width: 80%;
+    img {
+      width: 350px;
+      height: 350px;
+    }
   }
 }
 // ABOUT-main > div styles
@@ -84,8 +104,6 @@ form {
     padding: 5px;
     text-align: center;
     img {
-      width: 220px;
-      height: 220px;
       object-fit: cover;
       border-radius: 50%;
     }

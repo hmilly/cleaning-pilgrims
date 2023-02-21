@@ -1,6 +1,5 @@
 /* Styles for buttons, text and main app */
 
-
 /* App and body styles */
 .App {
   display: block;
@@ -11,17 +10,17 @@
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Lato', arial, sans-serif;
+  font-family: "Lato", arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;
   color: white;
 }
 
-
 /* Styles for text throught the website */
 body h1,
 #lg-txt {
   font-size: 22px;
+  color: white;
 }
 
 body h2 {
@@ -49,7 +48,6 @@ input {
   color: rgb(164, 164, 164);
 }
 
-
 /* Link stylings */
 a,
 a:visited,
@@ -75,7 +73,7 @@ a:active {
 
 /* <a> yellow link */
 #yellowLink {
-  padding: 10px 4px;
+  padding: 4px;
   color: rgb(220, 187, 1);
   text-decoration: none;
 }
