@@ -43,6 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h2 {
     width: 100%;
     color: rgb(220, 187, 1);
@@ -51,20 +52,26 @@
   .contact-main {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 80%;
+    justify-content: space-around;
     // form styles in compStyles
     aside {
+      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       min-height: 400px;
-      width: 50%;
+      height: 500px;
       padding: 10px 0;
       div {
         display: flex;
         flex-direction: column;
       }
     }
+
+  }
+  @media only screen and (max-width: 768px){
+    .contact-main{flex-direction: column;}
   }
 }
 

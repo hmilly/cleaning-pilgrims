@@ -5,6 +5,7 @@
   display: block;
   background-color: black;
   min-height: 100vh;
+  min-width: 280px;
 }
 
 body {
