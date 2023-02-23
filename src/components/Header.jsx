@@ -3,6 +3,7 @@ import { SlMenu } from "react-icons/sl";
 import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        {windowSize >= 769 ? (
+        {windowSize >= 768 ? (
           <ul>
             <li>
               <Link to="/">HOME</Link>
@@ -36,8 +37,22 @@ const Header = () => {
         ) : (
           <ul>
             <li>
-              <button>
+              <button onClick={() => setToggleMenu(true)}>
                 <SlMenu className="icon" />
+                {toggleMenu && (
+              
+                    <ul className="fullMenu">
+                      <li><Link to="/">Home</Link></li>
+                      <li><Link to="/contact">Contact</Link></li>
+                      <li><Link to="/about">About</Link></li>
+
+                    <span>X</span>
+                    </ul>
+                    
+                    
+                    
+                  
+                )}
               </button>
             </li>
             <li id="lg-li">

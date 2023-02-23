@@ -11,7 +11,7 @@ const Home = () => {
           <h3>A clean room is a clear mind</h3>
           <h3>A clear mind is a productive day</h3>
           <br></br>
-          <Link className="btn" to="/contact">
+          <Link to="/contact">
             BOOK NOW
           </Link>
         </div>

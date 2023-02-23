@@ -6,7 +6,7 @@ const WhyUsBanner = () => {
   return (
     <section className="whyUs">
       <h2>WHY CHOOSE US?</h2>
-      <div className="whyUs-content">
+      <div className="main-content">
         <div>
           <img src={room} alt="Orange room" />
           <h3>A Cleaner Environment</h3>

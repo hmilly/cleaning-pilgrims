@@ -5,7 +5,7 @@ const Form = () => {
     name: "",
     email: "",
     frequency: "",
-    sqFoot: 0,
+    sqFoot: "",
     text: "",
   });
 
@@ -17,62 +17,84 @@ const Form = () => {
   };
 
   const onSubmit = () => {
-    console.log(formData)
-  }
+    console.log(formData);
+  };
+
+  const { name, email, frequency, sqFoot, text } = formData;
 
   return (
     <form>
       <h3>Get a Cleaning Estimate</h3>
-      <div className='inputbox'>
-        <input
-          type="text"
-          required
-          id="name"
-          value={formData.name}
-          onChange={addFormData}
-        />
-        <span>Name</span>
+      <div className="inputbox">
+        <input type="text" id="name" value={name} onChange={addFormData} />
+        <span className={`${name !== "" && "inputFilled"}`}>Name</span>
       </div>
-      <div className='inputbox'>
+      <div className="inputbox">
         <input
           type="email"
           required
           id="email"
-          value={formData.email}
+          value={email}
           onChange={addFormData}
         />
-        <span>Email</span>
+        <span className={`${email !== "" && "inputFilled"}`}>Email*</span>
       </div>
-      <div className='inputbox'>
+      <div className="inputbox">
         <input
           type="text"
           required
           id="frequency"
-          value={formData.frequency}
+          value={frequency}
           onChange={addFormData}
         />
-        <span>Frequency of cleaning</span>
+        <span className={`${frequency !== "" && "inputFilled"}`}>
+          Frequency of cleaning
+        </span>
       </div>
-      <div className='inputbox'>
+      <div className="inputbox">
         <input
           type="number"
           required
           id="sqFoot"
-          value={formData.sqFoot}
+          value={sqFoot > 0 ? sqFoot : ""}
           onChange={addFormData}
         />
-        <span>Sq foot to be cleaned</span>
+        <span className={`${sqFoot > 0 && "inputFilled"}`}>
+          Sq foot to be cleaned (num only)
+        </span>
       </div>
-
       <textarea
         type="text"
         required
         id="text"
-        value={formData.text}
+        value={text}
         onChange={addFormData}
-        placeholder='Tell us more about your cleaning needs so we can give you a more accurate estimate. How is the space used? Does it have any special cleaning needs?" data-aid="Tell us more about your cleaning needs so we can give you a more accurate estimate. How is the space used? Does it have any special cleaning needs?'
+        placeholder="Tell us more about your cleaning needs so we can give you a more accurate estimate. How is the space used? Does it have any special cleaning needs?"
       />
-      <button type="submit" onClick={onSubmit}>Send</button>
+      <button type="submit" onClick={onSubmit}>
+        Send
+      </button>
+      <div className="form-p">
+        <p>
+          This site is protected by reCAPTCHA and the{" "}
+          <a
+            id="yellowLink"
+            href="https://policies.google.com/privacy"
+            target="_blank"
+          >
+            Google Privacy Policy
+          </a>{" "}
+          and{" "}
+          <a
+            id="yellowLink"
+            href="https://policies.google.com/terms"
+            target="_blank"
+          >
+            Terms of Service
+          </a>
+          .
+        </p>
+      </div>
     </form>
   );
 };

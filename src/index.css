@@ -1,9 +1,7 @@
-/* Styles for buttons, text and main app */
-
 /* App and body styles */
 .App {
   display: block;
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   min-height: 100vh;
   min-width: 280px;
 }
@@ -18,34 +16,46 @@ body {
 }
 
 /* Styles for text throught the website */
-body h1,
+h1,
 #lg-txt {
-  font-size: 22px;
+  font-size: 25px;
   color: white;
 }
 
-body h2 {
-  font-size: 38px;
+h2 {
+  font-size: 75px;
+  font-weight: 100;
 }
 
-body h3,
-body button,
+h3,
+button,
 .btn {
-  font-size: 20px;
+  font-size: 22px;
 }
 
-body h4,
-body h5,
-body a,
-body p,
-body li,
-body section,
-body td {
-  font-size: 16px;
+h4,
+h5,
+a,
+p,
+li,
+section,
+input,
+textarea,
+textarea::placeholder {
+  font-size: 18px;
 }
 
-body p,
-input {
+/* resize h2 under md screen */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+/* main font colours */
+p,
+input,
+li {
   color: rgb(164, 164, 164);
 }
 
@@ -54,22 +64,6 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-}
-
-/* <a> styled as a yellow btn */
-.btn {
-  display: block;
-  width: 140px;
-  border: none;
-  background-color: rgb(220, 187, 1);
-  color: black;
-  font-weight: 500;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.btn:hover {
-  background-color: gold;
 }
 
 /* <a> yellow link */
