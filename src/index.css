@@ -1,7 +1,11 @@
 /* App and body styles */
+* {
+  box-sizing: border-box;
+  font-family: "Lato", arial, sans-serif;
+}
+
 .App {
   display: block;
-  background-color: rgb(22, 22, 22);
   min-height: 100vh;
   min-width: 280px;
 }
@@ -9,22 +13,35 @@
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  font-family: "Lato", arial, sans-serif;
-  -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;
   color: white;
+  background-color: rgb(22, 22, 22);
 }
 
 /* Styles for text throught the website */
 h1,
 #lg-txt {
   font-size: 25px;
-  color: white;
 }
 
 h2 {
   font-size: 75px;
   font-weight: 100;
+}
+/* resize h2 under md screen */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  h1,
+  #lg-txt {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 28px;
+  }
 }
 
 h3,
@@ -45,18 +62,31 @@ textarea::placeholder {
   font-size: 18px;
 }
 
-/* resize h2 under md screen */
-@media only screen and (max-width: 768px) {
-  h2 {
-    font-size: 34px;
-  }
-}
-
 /* main font colours */
 p,
 input,
 li {
   color: rgb(164, 164, 164);
+}
+
+.icon,
+a,
+h1,
+h2,
+h3,
+#lg-txt textarea {
+  display: block;
+  color: white;
+}
+
+
+/* button stylings */
+
+button {
+  cursor: pointer;
+}
+button:hover > .icon {
+  color: gold;
 }
 
 /* Link stylings */

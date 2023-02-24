@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { SlMenu } from "react-icons/sl";
 import { useEffect, useState } from "react";
 
-const Header = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+const NavHeader = ({ setToggleMenu }) => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        {windowSize >= 768 ? (
+        {windowSize >= 992 ? (
           <ul>
             <li>
               <Link to="/">HOME</Link>
@@ -39,20 +38,6 @@ const Header = () => {
             <li>
               <button onClick={() => setToggleMenu(true)}>
                 <SlMenu className="icon" />
-                {toggleMenu && (
-              
-                    <ul className="fullMenu">
-                      <li><Link to="/">Home</Link></li>
-                      <li><Link to="/contact">Contact</Link></li>
-                      <li><Link to="/about">About</Link></li>
-
-                    <span>X</span>
-                    </ul>
-                    
-                    
-                    
-                  
-                )}
               </button>
             </li>
             <li id="lg-li">
@@ -67,4 +52,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavHeader;

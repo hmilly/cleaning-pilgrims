@@ -16,7 +16,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
       <WhyUsBanner />
       <FbBanner />
     </main>

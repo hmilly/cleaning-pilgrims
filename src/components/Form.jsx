@@ -4,6 +4,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    address: "",
     frequency: "",
     sqFoot: "",
     text: "",
@@ -20,7 +21,7 @@ const Form = () => {
     console.log(formData);
   };
 
-  const { name, email, frequency, sqFoot, text } = formData;
+  const { name, email, address, frequency, sqFoot, text } = formData;
 
   return (
     <form>
@@ -38,6 +39,16 @@ const Form = () => {
           onChange={addFormData}
         />
         <span className={`${email !== "" && "inputFilled"}`}>Email*</span>
+      </div>
+      <div className="inputbox">
+        <input
+          type="address"
+          id="address"
+          required
+          value={address}
+          onChange={addFormData}
+        />
+        <span className={`${address !== "" && "inputFilled"}`}>Property address</span>
       </div>
       <div className="inputbox">
         <input
@@ -65,7 +76,6 @@ const Form = () => {
       </div>
       <textarea
         type="text"
-        required
         id="text"
         value={text}
         onChange={addFormData}

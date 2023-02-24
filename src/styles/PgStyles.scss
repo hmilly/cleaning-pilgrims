@@ -23,7 +23,6 @@
       url(../assets/office.png);
     background-position: center;
     background-size: cover;
-
     div {
       text-align: center;
       height: 100%;
@@ -56,7 +55,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   h2 {
     width: 100%;
     color: rgb(220, 187, 1);
@@ -67,29 +65,38 @@
     flex-direction: row;
     width: 80%;
     justify-content: space-around;
-    // form styles in compStyles
+    align-items: flex-start;
+    // form styles in Component.scss
     aside {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      min-height: 400px;
-      height: 500px;
-      padding: 10px 0;
+      min-height: 500px;
+      padding: 0 10px;
       div {
         display: flex;
         flex-direction: column;
+        p{
+          display: inline-block;
+        }
       }
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .contact-main {
       flex-direction: column;
+      width: 100%;
+      aside{
+        padding: 0;
+      }
     }
   }
+  
 }
 
-// About page (mixin used for whyUs banner in compStyles)
+// About page
+//(mixin also used for whyUs banner in Component.scss)
 
 @mixin main-body($width) {
   display: flex;
@@ -105,11 +112,9 @@
   .main-content {
     display: flex;
     flex-wrap: wrap;
-
     width: 98%;
     gap: 10px;
     div {
-      min-width: 280px;
       display: flex;
       flex-direction: column;
       align-items: center;
