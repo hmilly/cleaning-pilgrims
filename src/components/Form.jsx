@@ -27,7 +27,7 @@ const Form = () => {
     <form>
       <h3>Get a Cleaning Estimate</h3>
       <div className="inputbox">
-        <input type="text" id="name" value={name} onChange={addFormData} />
+        <input type="name" id="name" value={name} onChange={addFormData} />
         <span className={`${name !== "" && "inputFilled"}`}>Name</span>
       </div>
       <div className="inputbox">
@@ -48,7 +48,9 @@ const Form = () => {
           value={address}
           onChange={addFormData}
         />
-        <span className={`${address !== "" && "inputFilled"}`}>Property address</span>
+        <span className={`${address !== "" && "inputFilled"}`}>
+          Property address
+        </span>
       </div>
       <div className="inputbox">
         <input

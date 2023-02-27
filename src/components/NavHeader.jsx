@@ -19,18 +19,24 @@ const NavHeader = ({ setToggleMenu }) => {
         {windowSize >= 992 ? (
           <ul>
             <li>
-              <Link to="/">HOME</Link>
+              <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+                HOME
+              </Link>
             </li>
             <li>
-              <Link to="/contact">CONTACT</Link>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
+                CONTACT
+              </Link>
             </li>
             <li id="lg-li">
-              <Link id="lg-txt" to="/">
+              <Link id="lg-txt" to="/" onClick={() => window.scrollTo(0, 0)}>
                 KENT CLEANING PILGRIMS LTD.
               </Link>
             </li>
             <li>
-              <Link to="/about">ABOUT</Link>
+              <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
+                ABOUT
+              </Link>
             </li>
           </ul>
         ) : (

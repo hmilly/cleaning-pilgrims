@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
 const NavFull = ({ setToggleMenu }) => {
+  
+  const clicked = () => {
+    setToggleMenu(false);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <ul className="fullMenu">
       <li>
@@ -10,17 +16,17 @@ const NavFull = ({ setToggleMenu }) => {
         </button>
       </li>
       <li>
-        <Link to="/" onClick={() => setToggleMenu(false)}>
+        <Link to="/" onClick={() => clicked()}>
           <p id="lg-txt">Home</p>
         </Link>
       </li>
       <li>
-        <Link to="/contact" onClick={() => setToggleMenu(false)}>
+        <Link to="/contact" onClick={() => clicked()}>
           <p id="lg-txt">Contact</p>
         </Link>
       </li>
       <li>
-        <Link to="/about" onClick={() => setToggleMenu(false)}>
+        <Link to="/about" onClick={() => clicked()}>
           <p id="lg-txt">About</p>
         </Link>
       </li>
