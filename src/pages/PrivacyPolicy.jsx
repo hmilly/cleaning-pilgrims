@@ -1,4 +1,3 @@
-
 const PrivacyPolicy = () => {
   return (
     <main className="privacyPg">
@@ -6,11 +5,17 @@ const PrivacyPolicy = () => {
       <section>
         <p>
           Kent Cleaning Pilgrims Ltd (“we”, “us”, “our”) are committed to
-          protecting and respecting your privacy.</p><p> This notice explains when and
-          why we collect personal information about our customers, how we use
-          it, the conditions under which we may disclose it to others, and how
-          we keep it secure. </p><p>We may collect, use and store the following types
-          of personal information:
+          protecting and respecting your privacy.
+        </p>
+        <p>
+          {" "}
+          This notice explains when and why we collect personal information
+          about our customers, how we use it, the conditions under which we may
+          disclose it to others, and how we keep it secure.{" "}
+        </p>
+        <p>
+          We may collect, use and store the following types of personal
+          information:
         </p>
         <ul>
           <li>
@@ -33,9 +38,9 @@ const PrivacyPolicy = () => {
         <p>
           We will only collect personal information from you if it is necessary
           for us to do so, and we will only collect the minimum amount of
-          personal information required to provide you with our services.</p><p> We use
-          your personal information in the following ways:
+          personal information required to provide you with our services.
         </p>
+        <p> We use your personal information in the following ways:</p>
         <ul>
           <li>To provide you with the services you have requested</li>
           <li>To communicate with you about your account or our services</li>
@@ -75,7 +80,6 @@ const PrivacyPolicy = () => {
           website
         </p>
       </section>
-      
     </main>
   );
 };

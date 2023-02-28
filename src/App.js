@@ -1,17 +1,15 @@
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/PgStyles.scss";
 import "./styles/Components.scss";
 import "./styles/NavStyles.scss";
-
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import NavHeader from "./components/NavHeader";
 import NavFull from "./components/NavFull";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+import About from "./pages/About";
 import Footer from "./components/Footer";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const App = () => {
   const [toggleMenu, setToggleMenu] = useState(false);

@@ -3,16 +3,12 @@
 // Form
 form {
   flex: 1;
-  min-height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 0 10px;
   gap: 10px;
-  h3 {
-    align-self: flex-start;
-  }
   .inputbox {
     height: 90px;
     width: 100%;
@@ -22,7 +18,7 @@ form {
       border: none;
       outline: none;
       background: black;
-      width: 90%;
+      width: 100%;
       height: 60px;
       left: 0;
       padding: 15px 20px 5px 20px;
@@ -48,11 +44,13 @@ form {
       font-size: 0.8em;
       color: gold;
     }
+    input:autofill ~ span {
+      color: blue;
+    }
   }
   textarea {
-    width: 90%;
+    width: 100%;
     height: 200px;
-
     padding: 10px;
     resize: none;
     background-color: black;
@@ -60,14 +58,19 @@ form {
   button {
     background-color: rgb(220, 187, 1);
     color: black;
-    font-weight: 500;
     width: 90%;
     height: 50px;
+    margin: 0 auto;
   }
   .form-p {
     text-align: center;
     a {
       display: inline;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    h3 {
+      text-align: center;
     }
   }
 }
@@ -87,15 +90,9 @@ form {
 }
 
 // why us banner
-// banner is using all items from *About* Page
+// banner is using all styles from *About* Page
 .whyUs {
   @include PgStyles.main-body(80%);
-}
-
-@media only screen and (max-width: 768px) {
-  .whyUs {
-    width: 100%;
-  }
 }
 
 //footer
@@ -103,9 +100,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   height: 150px;
-  padding: 10px;
+  gap: 10px;
   text-align: center;
 }

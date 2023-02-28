@@ -18,7 +18,7 @@ body {
   background-color: rgb(22, 22, 22);
 }
 
-/* Styles for text throught the website */
+/* text sizes throughout the website */
 h1,
 #lg-txt {
   font-size: 25px;
@@ -28,17 +28,22 @@ h2 {
   font-size: 75px;
   font-weight: 100;
 }
+
 /* resize h2 under md screen */
 @media only screen and (max-width: 768px) {
   h2 {
     font-size: 34px;
   }
 }
+
+/* resize h1, lgtxt & h2 under sm screen */
 @media only screen and (max-width: 350px) {
+
   h1,
   #lg-txt {
     font-size: 22px;
   }
+
   h2 {
     font-size: 28px;
   }
@@ -62,9 +67,8 @@ textarea::placeholder {
   font-size: 18px;
 }
 
-/* main font colours */
+/* main font colours on website */
 p,
-input,
 li {
   color: rgb(164, 164, 164);
 }
@@ -74,22 +78,27 @@ a,
 h1,
 h2,
 h3,
-#lg-txt textarea {
+#lg-txt,
+textarea,
+input {
   display: block;
   color: white;
 }
 
+.icon {
+  margin: 0 auto;
+}
 
-/* button stylings */
-
+/* main button stylings */
 button {
   cursor: pointer;
 }
-button:hover > .icon {
+
+button:hover>.icon {
   color: gold;
 }
 
-/* Link stylings */
+/* main Link stylings */
 a,
 a:visited,
 a:active {

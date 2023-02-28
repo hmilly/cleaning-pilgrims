@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
 const NavFull = ({ setToggleMenu }) => {
-  
   const clicked = () => {
     setToggleMenu(false);
     window.scrollTo(0, 0);

@@ -35,11 +35,11 @@
       }
       a {
         display: block;
-        width: 260px;
+        width: 250px;
         border: none;
         background-color: rgb(220, 187, 1);
         color: black;
-        font-weight: 500;
+        font-weight: 600;
         padding: 20px;
         margin: 0 auto;
         &:hover {
@@ -56,48 +56,43 @@
   flex-direction: column;
   align-items: center;
   h2 {
-    width: 100%;
     color: rgb(220, 187, 1);
-    text-align: center;
   }
   .contact-main {
     display: flex;
-    flex-direction: row;
     width: 80%;
-    justify-content: space-around;
     align-items: flex-start;
     // form styles in Component.scss
     aside {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      min-height: 500px;
+      justify-content: space-between;
+      min-height: 700px;
       padding: 0 10px;
       div {
         display: flex;
         flex-direction: column;
-        p{
-          display: inline-block;
+        a {
+          word-break: break-all;
         }
       }
     }
   }
+  // under lg, change flex direction & align text
   @media only screen and (max-width: 992px) {
     .contact-main {
       flex-direction: column;
       width: 100%;
-      aside{
-        padding: 0;
+      aside {
+        text-align: center;
       }
     }
   }
-  
 }
 
 // About page
 //(mixin also used for whyUs banner in Component.scss)
-
 @mixin main-body($width) {
   display: flex;
   flex-direction: column;
@@ -105,9 +100,7 @@
   margin: 0 auto;
   width: $width;
   h2 {
-    width: 100%;
     color: rgb(220, 187, 1);
-    text-align: center;
   }
   .main-content {
     display: flex;
@@ -129,16 +122,19 @@
         height: auto;
       }
       p {
-        width: 80%;
+        width: 90%;
       }
       ul {
         width: 80%;
         display: flex;
         flex-direction: column;
         text-align: start;
-        color: rgb(164, 164, 164);
       }
     }
+  }
+  // under md - max width 100%
+  @media only screen and (max-width: 768px) {
+    width: 100%;
   }
 }
 
@@ -149,7 +145,7 @@
 // privacy-policy
 .privacyPg {
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   h2 {
     text-align: center;
     color: rgb(220, 187, 1);
@@ -165,10 +161,11 @@
       }
     }
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .privacyPg {
+  @media only screen and (max-width: 768px) {
     width: 90%;
+    text-align: center;
+    li {
+      text-align: left;
+    }
   }
 }

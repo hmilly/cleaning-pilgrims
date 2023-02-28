@@ -3,7 +3,6 @@ import crew from "../assets/crew.png";
 import room from "../assets/room2.png";
 
 const About = () => {
-
   return (
     <main className="about">
       <h2>ABOUT US</h2>

@@ -17,7 +17,8 @@ const Form = () => {
     }));
   };
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
     console.log(formData);
   };
 
@@ -27,7 +28,13 @@ const Form = () => {
     <form>
       <h3>Get a Cleaning Estimate</h3>
       <div className="inputbox">
-        <input type="name" id="name" value={name} onChange={addFormData} />
+        <input
+          type="name"
+          autoComplete="given-name"
+          id="name"
+          value={name}
+          onChange={addFormData}
+        />
         <span className={`${name !== "" && "inputFilled"}`}>Name</span>
       </div>
       <div className="inputbox">
@@ -73,7 +80,7 @@ const Form = () => {
           onChange={addFormData}
         />
         <span className={`${sqFoot > 0 && "inputFilled"}`}>
-          Sq foot to be cleaned (num only)
+          Sq foot to be cleaned (number)
         </span>
       </div>
       <textarea
@@ -83,7 +90,7 @@ const Form = () => {
         onChange={addFormData}
         placeholder="Tell us more about your cleaning needs so we can give you a more accurate estimate. How is the space used? Does it have any special cleaning needs?"
       />
-      <button type="submit" onClick={onSubmit}>
+      <button type="submit" onClick={(e) => onSubmit(e)}>
         Send
       </button>
       <div className="form-p">
@@ -93,6 +100,7 @@ const Form = () => {
             id="yellowLink"
             href="https://policies.google.com/privacy"
             target="_blank"
+            rel="noreferrer"
           >
             Google Privacy Policy
           </a>{" "}
@@ -101,6 +109,7 @@ const Form = () => {
             id="yellowLink"
             href="https://policies.google.com/terms"
             target="_blank"
+            rel="noreferrer"
           >
             Terms of Service
           </a>
