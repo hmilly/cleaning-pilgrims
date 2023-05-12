@@ -10,7 +10,7 @@ const NavFull = ({ setToggleMenu }) => {
   return (
     <ul className="fullMenu">
       <li>
-        <button onClick={() => setToggleMenu(false)}>
+        <button onClick={() => setToggleMenu(false)} aria-label="menu">
           <AiOutlineClose className="icon" />
         </button>
       </li>

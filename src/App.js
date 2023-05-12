@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/PgStyles.scss";
 import "./styles/Components.scss";
 import "./styles/NavStyles.scss";
-import NavHeader from "./components/NavHeader";
+import Header from "./components/Header";
 import NavFull from "./components/NavFull";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <NavHeader setToggleMenu={setToggleMenu} />
+        <Header setToggleMenu={setToggleMenu} />
         {toggleMenu && <NavFull setToggleMenu={setToggleMenu} />}
         <Routes>
           <Route path="/" element={<Home />} />

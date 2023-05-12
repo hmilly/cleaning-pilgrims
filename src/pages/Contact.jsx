@@ -21,10 +21,10 @@ const Contact = () => {
           <p>Folkestone, Kent, England, United Kingdom</p>
 
           <div>
-            <a href="tel:07984469148" id="yellowLink">
+            <a href="tel:07984469148" id="yellowLink" aria-label="company telephone number">
               07984469148
             </a>
-            <a href="mailto:kentcleaningpilgrims@gmail.com" id="yellowLink">
+            <a href="mailto:kentcleaningpilgrims@gmail.com" id="yellowLink" aria-label="company email">
               kentcleaningpilgrims@gmail.com
             </a>
           </div>

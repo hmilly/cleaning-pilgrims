@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { SlMenu } from "react-icons/sl";
 import { useEffect, useState } from "react";
 
-const NavHeader = ({ setToggleMenu }) => {
+const Header = ({ setToggleMenu }) => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const NavHeader = ({ setToggleMenu }) => {
         ) : (
           <ul>
             <li>
-              <button onClick={() => setToggleMenu(true)}>
+              <button onClick={() => setToggleMenu(true)} aria-label="menu">
                 <SlMenu className="icon" />
               </button>
             </li>
@@ -58,4 +58,4 @@ const NavHeader = ({ setToggleMenu }) => {
   );
 };
 
-export default NavHeader;
+export default Header;

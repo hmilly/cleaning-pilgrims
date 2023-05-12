@@ -8,7 +8,7 @@ const WhyUsBanner = () => {
       <h2>WHY CHOOSE US?</h2>
       <div className="main-content">
         <div>
-          <img src={room} alt="Orange room" />
+          <img src={room} alt="Orange room" loading="lazy" />
           <h3>A Cleaner Environment</h3>
           <p>
             We offer commercial cleaning services for property managers,
@@ -18,7 +18,7 @@ const WhyUsBanner = () => {
           </p>
         </div>
         <div>
-          <img src={crew} alt="Cleaning crew" />
+          <img src={crew} alt="Cleaning crew" loading="lazy"/>
           <h3>Your Business is Ours</h3>
           <p>
             We promise quality, reliable cleaning services every time so our
@@ -28,7 +28,7 @@ const WhyUsBanner = () => {
           </p>
         </div>
         <div>
-          <img src={cleaner} alt="Woman cleaning desk" />
+          <img src={cleaner} alt="Woman cleaning desk" loading="lazy"/>
           <h3>What We Offer</h3>
           <p> Some of our cleaning services include: </p>
           <ul>

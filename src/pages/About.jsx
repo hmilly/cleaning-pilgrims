@@ -8,7 +8,7 @@ const About = () => {
       <h2>ABOUT US</h2>
       <div className="main-content">
         <div>
-          <img src={crew} alt="Cleaning crew" />
+          <img src={crew} alt="Cleaning crew"  loading="lazy"/>
           <h3>Not Your Average Cleaners</h3>
           <p>
             Our staff are extensively trained to provide an exceptional service.
@@ -20,7 +20,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <img src={room} alt="Hoover in a hallway" />
+          <img src={room} alt="Hoover in a hallway"  loading="lazy"/>
           <h3>Green Cleaning</h3>
           <p>
             Commercial cleaning is more than just water in a bucket. There are
@@ -32,7 +32,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <img src={cleaner} alt="Woman wiping shelving" />
+          <img src={cleaner} alt="Woman wiping shelving"  loading="lazy"/>
           <h3>What We Offer</h3>
           <p>
             We are committed to protecting the environment. That's why we

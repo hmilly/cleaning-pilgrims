@@ -8,7 +8,6 @@ const PrivacyPolicy = () => {
           protecting and respecting your privacy.
         </p>
         <p>
-          {" "}
           This notice explains when and why we collect personal information
           about our customers, how we use it, the conditions under which we may
           disclose it to others, and how we keep it secure.{" "}

@@ -90,7 +90,7 @@ const Form = () => {
         onChange={addFormData}
         placeholder="Tell us more about your cleaning needs so we can give you a more accurate estimate. How is the space used? Does it have any special cleaning needs?"
       />
-      <button type="submit" onClick={(e) => onSubmit(e)}>
+      <button type="submit" aria-label="Submit" onClick={(e) => onSubmit(e)}>
         Send
       </button>
       <div className="form-p">
@@ -101,6 +101,7 @@ const Form = () => {
             href="https://policies.google.com/privacy"
             target="_blank"
             rel="noreferrer"
+            aria-label="google privacy statement"
           >
             Google Privacy Policy
           </a>{" "}
@@ -110,6 +111,7 @@ const Form = () => {
             href="https://policies.google.com/terms"
             target="_blank"
             rel="noreferrer"
+            aria-label="google terms"
           >
             Terms of Service
           </a>
