@@ -5,6 +5,7 @@ header {
   background-color: black;
   height: 60px;
   width: 100%;
+  max-width: 1600px;
   nav {
     height: 100%;
     width: 100%;
@@ -12,8 +13,6 @@ header {
       list-style-type: none;
       height: 100%;
       width: 100%;
-      margin: 0;
-      padding: 0;
       display: flex;
       align-items: center;
       li {
@@ -49,7 +48,6 @@ header {
   list-style-type: none;
   position: fixed;
   padding: 0 40px;
-  margin: 0;
   background-color: black;
   li {
     height: 80px;
@@ -64,7 +62,6 @@ header {
     button {
       position: absolute;
       right: 25px;
-      padding: 0;
       background-color: black;
       .icon {
         height: 35px;
