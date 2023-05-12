@@ -1,4 +1,4 @@
 # Cleaning Pilgrims
 
 
-A simple website created for my cousin for a new business venture.
+A website for a commercial cleaning service based in SE Kent.
